@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>GladBillet</title>
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="img/GladBillet.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="ticket">
+      <span class="statusBar"></span>
+      <div id="zoneView">
+        <form class="navBar" id="zoneNav">
+          <h1>Zone</h1>
+          <input type="text" id="zoneField" placeholder="Zone">
+          <span class="close" onClick="toggleSelector();"></span>
+        </form>
+        <ul class="list">
+          <li data-zone="1" onClick="activate(1)">
+            Indre by
+          </li>
+          <li data-zone="2" onClick="activate(2)">
+            Vanløse, Valby, Ryparken
+          </li>
+          <li data-zone="3" onClick="activate(3)">
+            DR Byen, Bella Center
+          </li>
+          <li data-zone="4" onClick="activate(4)">
+            Tårnby, Kastrup, Lufthavnen
+          </li>
+          <li data-zone="30" onClick="activate(30)">
+            Charlottenlund, Hellerup
+          </li>
+          <li data-zone="31" onClick="activate(31)">
+            Buddinge, Husum, Herlev
+          </li>
+          <li data-zone="32" onClick="activate(32)">
+            Rødovre, Hvidovre, Brøndby-Ø
+          </li>
+          <li data-zone="33" onClick="activate(33)">
+            Hvidovre Hospital, Avedøre
+          </li>
+          <li data-zone="40" onClick="activate(40)">
+            Klampenborg
+          </li>
+          <li data-zone="41" onClick="activate(41)">
+            Bagsværd, Gladsaxe, Lyngby
+          </li>
+          <li data-zone="42" onClick="activate(42)">
+            Ballerup, Skovlunde
+          </li>
+          <li data-zone="43" onClick="activate(43)">
+            Glostrup, Brøndby-Vester
+          </li>
+          <li data-zone="52" onClick="activate(52)">
+            Værløse
+          </li>
+          <li data-zone="53" onClick="activate(53)">
+            Måløv
+          </li>
+          <li data-zone="62" onClick="activate(62)">
+            Farum
+          </li>
+          <li data-zone="63" onClick="activate(63)">
+            Kildedal
+          </li>
+          <li data-zone="85" onClick="activate(85)">
+            Ølstykke
+          </li>
+        </ul>
+      </div>
+      <div id="ticketView">
+        <span class="close" onClick="toggleSelector();"></span>
+        <span class="diagonal a"></span>
+        <span class="diagonal b"></span>
+        <span class="horizontal c"></span>
+        <span class="diagonal d"></span>
+        <span class="diagonal e"></span>
+        <span class="horizontal f"></span>
+        <span class="horizontal g"></span>
+        <span class="diagonal i"></span>
+        <span class="diagonal j"></span>
+        <span class="horizontal h"></span>
+        <div id="ticket">
+          <div>
+            <span id="expirationHeadline">Expiration Time</span>
+            <h1 id="expirationTime"></h1>
+            <span id="bought">
+              <span id="boughtDate"></span>
+              <span id="boughtTime"></span>
+            </span>
+            <div id="vars">
+              <div data-title="start zone">
+                <span id="startZone">1</span>
+              </div>
+              <div data-title="passengers"></div>
+              <div data-title="ticket type"></div>
+            </div>
+            <span class="numb" id="first"></span>
+            <span class="numb" id="second"></span>
+            <span class="numb" id="third">056326269</span>
+            <span class="numb" id="fourth"></span>
+            <span class="space"></span>
+            <span id="ticketCode">I224HABA</span>
+            <span id="phoneNumber">+45 51 28 45 19</span>
+            <span class="price"></span>
+            <span class="footer"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    
+      <script src="js/script.js"></script>
+    </body>
+</html>
